@@ -29,3 +29,5 @@ Here are the steps I have done and will log them as I go along
 - Created css modules 
 - Styled buttons in css module
 - Created a useRef between the pages so I can make it scroll in the parallax
+- Added new images for the website
+-

@@ -56,12 +56,9 @@ const Projects = () => {
                         <p style={{ margin: '0 0 20px 0', lineHeight: '1.6' }}>{project.description}</p>
                         <div
                         style={{
-                            display: 'flex',
-                            gap: '10px',
-                            flexWrap: 'nowrap', // Prevent wrapping, forces a single row
-                            flexDirection: 'row', // Explicitly set flex direction to row
-                            alignItems: 'center', // Align items vertically
+
                         }}
+                        className={styles.flavriteContainer}
                         >
                         {project.appleLink && (
                             <div style={{ position: 'relative', width: '150px', height: '50px' }}>
@@ -69,14 +66,7 @@ const Projects = () => {
                                 <img
                                 src="/app-store.png"
                                 alt="Download on the App Store"
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '100%',
-                                    objectFit: 'contain',
-                                }}
+                                className={styles.appStore}
                                 />
                             </a>
                             </div>
@@ -87,11 +77,7 @@ const Projects = () => {
                                 <img
                                 src="/googleplay-badge.webp"
                                 alt="Download on Google Play"
-                                style={{
-                                    width: '100%',
-                                    height: '100%',
-                                    objectFit: 'contain',
-                                }}
+                                className={styles.googlePlay}
                                 />
                             </a>
                             </div>
@@ -101,18 +87,7 @@ const Projects = () => {
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            style={{
-                                padding: '10px 15px',
-                                backgroundColor: '#9641ff',
-                                color: 'white',
-                                textDecoration: 'none',
-                                borderRadius: '5px',
-                                display: 'inline-block',
-                                alignContent: 'center',
-                                height: '50px', // Ensure consistent height
-                                lineHeight: '30px', // Vertical alignment
-                                fontSize: '1.2em',
-                            }}
+                            className={styles.buttonContainer}
                             >
                             Visit Project
                             </a>
