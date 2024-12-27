@@ -34,3 +34,17 @@ Here are the steps I have done and will log them as I go along
 
 # Current time: 6:24PM
 
+- Fixed text font
+- Added dotted line between intro and about
+- Finished Desktop Styles
+- Fixed typo 
+
+# Current time: 6:55PM
+
+- Connected Contact page to emailJS
+- Set a new template for the portfolio 
+- Created a contact message 
+
+# HACKATHON FINISHED -- 7:15PM 
+
+- Total time: 4 hours and 40 minutes

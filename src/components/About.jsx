@@ -7,7 +7,7 @@ const AboutMe = () => {
 
             <div className={styles.content}>
             <p>
-                {`Hi! my name is Mike Yamauchi, I'm an ambitious full-stack developer with a passion for creating impactful solutions, specializing in React Native and Expo. \nOutside of coding, I enjoy spending time with my partner, playing video games, and hanging out with my cat. `}
+                {`Hi! My name is Mike Yamauchi, I'm an ambitious full-stack developer with a passion for creating impactful solutions, specializing in React Native and Expo. \nOutside of coding, I enjoy spending time with my partner, playing video games, and hanging out with my cat. `}
             </p>
 
             <p>

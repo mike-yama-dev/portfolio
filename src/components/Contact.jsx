@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-
+import styles from './Contact.module.css';
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -15,28 +15,32 @@ const Contact = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const resetForm = () => {
+        setFormData({ name: '', email: '', message: '' });
+      };
+    
+
+    const sendEmail = (e) => {
         e.preventDefault();
-
+    
         emailjs.send(
-            'your_service_id', // Replace with your EmailJS Service ID
-            'your_template_id', // Replace with your EmailJS Template ID
-            formData,
-            'your_user_id' // Replace with your EmailJS User ID
+          'default_service',
+          'template_wzhwc2b',
+          formData,
+          'hGRGNO1TEkDp6chA-'
         )
-        .then(() => {
-            setStatusMessage('Message sent successfully!');
-            setFormData({ name: '', email: '', message: '' });
-        })
-        .catch(() => {
-            setStatusMessage('Failed to send the message. Please try again later.');
-        });
-    };
-
+          .then(() => {
+            setStatusMessage("Thank you for reaching out! I'll reply within the next business day!"); // Show thank-you message
+            resetForm(); // Reset form fields
+          })
+          .catch(error => alert('There was an error: ' + error.text));
+      };
     return (
         <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
             <h1>Contact</h1>
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+
+            {statusMessage && <p>{statusMessage}</p>}
+            <form onSubmit={sendEmail} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <input
                     type="text"
                     name="name"
@@ -63,11 +67,11 @@ const Contact = () => {
                     required
                     style={{ padding: '10px', fontSize: '16px', minHeight: '100px' }}
                 />
-                <button type="submit" style={{ padding: '10px', fontSize: '16px', cursor: 'pointer' }}>
+                <button type="submit" className={styles.button}>
                     Send
                 </button>
             </form>
-            {statusMessage && <p>{statusMessage}</p>}
+            
         </div>
     );
 };
