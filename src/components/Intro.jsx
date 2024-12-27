@@ -32,26 +32,26 @@ const Intro = ({ aboutRef, projectsRef, contactRef }) => {
       <h1>Mike Yamauchi</h1>
       <p>Full-stack Developer</p>
       <div className={styles.buttonContainer}>
-      <button
+      <a
         onClick={handleScrollToAbout} // Call the scroll handler
         className={styles.button}
       >
         About Me
-      </button>
+      </a>
 
-        <button
+        <a
         onClick={handleScrollToProjects} // Call the scroll handler
         className={styles.button}
         >
         My Projects
-        </button>
+        </a>
 
-        <button
+        <a
         onClick={handleScrollToContact} // Call the scroll handler
         className={styles.button}
         >
         Contact Me
-        </button>
+        </a>
         </div>
         <div className={styles.border}>
 
