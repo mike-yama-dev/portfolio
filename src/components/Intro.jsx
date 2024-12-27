@@ -1,4 +1,5 @@
 import styles from './Intro.module.css';
+import PropTypes from 'prop-types';
 
 const Intro = ({ aboutRef, projectsRef, contactRef }) => {
   const handleScrollToAbout = () => {
@@ -58,5 +59,11 @@ const Intro = ({ aboutRef, projectsRef, contactRef }) => {
     </div>
   );
 };
+Intro.propTypes = {
+  aboutRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  projectsRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  contactRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+};
 
 export default Intro;
+
