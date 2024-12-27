@@ -9,7 +9,7 @@ const Intro = ({ aboutRef, projectsRef, contactRef }) => {
 
   const handleScrollToProjects = () => {
     if (projectsRef.current) {
-      projectsRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to Projects section
+        projectsRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to Projects section
     }
   }
 
