@@ -19,16 +19,16 @@ const Projects = () => {
             technology: 'React, EmailJS, Vite, Vercel, CSS modules',
             src: '/littleSpoon.jpg',
             imgAlt: 'Flavrite App',
-            imgPrint: 'landscape',
+            imgPrint: 'portrait',
         },
         {
             name: 'Portfolio',
             description: 'This is the portfolio you are currently viewing. I made this portfolio in under 24 hours as a mini solo hackathon to showcase my skills, projects, and the ability to work under pressure. I used React and Vite to create a fast and responsive website. I also used emailJS to create a contact form.',
             link: 'https://mike-yama-dev.com',
             technology: 'React, EmailJS, Vite, Vercel, CSS',
-            src: '/littleSpoon.jpg',
+            src: '/portfolio.jpg',
             imgAlt: 'Flavrite App',
-            imgPrint: 'landscape',
+            imgPrint: 'portrait',
         },
     ];
 
