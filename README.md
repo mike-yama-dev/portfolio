@@ -23,11 +23,14 @@ Here are the steps I have done and will log them as I go along
 - Gathered screen shots of projects to use
 
 # Current time: 4:09PM -- Break 
-# Back 5pm
+# Back 5PM
 
 - Image is ready! 
 - Created css modules 
 - Styled buttons in css module
 - Created a useRef between the pages so I can make it scroll in the parallax
 - Added new images for the website
--
+- Finished mobile styles (coded it mobile first)
+
+# Current time: 6:24PM
+
