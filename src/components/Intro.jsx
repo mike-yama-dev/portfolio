@@ -2,19 +2,22 @@ import styles from './Intro.module.css';
 import PropTypes from 'prop-types';
 
 const Intro = ({ aboutRef, projectsRef, contactRef }) => {
-  const handleScrollToAbout = () => {
+  const handleScrollToAbout = (e) => {
+    e.preventDefault();
     if (aboutRef.current) {
       aboutRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to About section
     }
   };
 
-  const handleScrollToProjects = () => {
+  const handleScrollToProjects = (e) => {    
+    e.preventDefault();
     if (projectsRef.current) {
         projectsRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to Projects section
     }
   }
 
-    const handleScrollToContact = () => {
+    const handleScrollToContact = (e) => {
+        e.preventDefault();
         if (contactRef.current) {
         contactRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to Contact section
         }
