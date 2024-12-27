@@ -21,14 +21,7 @@ const Intro = ({ aboutRef, projectsRef, contactRef }) => {
 
   return (
     <div
-      style={{
-        padding: '20px',
-        maxWidth: '800px',
-        margin: '0 auto',
-        textAlign: 'center',
-        marginTop: '15rem',
-        marginBottom: '7rem',
-      }}
+        className={styles.container}
     >
       <img
         src="/me.jpg"
@@ -37,19 +30,19 @@ const Intro = ({ aboutRef, projectsRef, contactRef }) => {
       />
       <h1>Mike Yamauchi</h1>
       <p>Full-stack Developer</p>
-      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '20px', maxWidth: '18rem', margin: '0 auto' }}>
+      <div className={styles.buttonContainer}>
       <button
         onClick={handleScrollToAbout} // Call the scroll handler
         className={styles.button}
       >
-        Learn More About Me
+        About Me
       </button>
 
         <button
         onClick={handleScrollToProjects} // Call the scroll handler
         className={styles.button}
         >
-        View My Projects
+        My Projects
         </button>
 
         <button
