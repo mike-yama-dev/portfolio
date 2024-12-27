@@ -45,6 +45,6 @@ Here are the steps I have done and will log them as I go along
 - Set a new template for the portfolio 
 - Created a contact message 
 
-# HACKATHON FINISHED -- 7:15PM 
+# HACKATHON FINISHED -- 7:18PM 
 
-- Total time: 4 hours and 40 minutes
+- Total time: 4 hours and 43 minutes
