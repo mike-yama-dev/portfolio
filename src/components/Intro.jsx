@@ -52,6 +52,9 @@ const Intro = ({ aboutRef, projectsRef, contactRef }) => {
         Contact Me
         </button>
         </div>
+        <div className={styles.border}>
+
+        </div>
     </div>
   );
 };

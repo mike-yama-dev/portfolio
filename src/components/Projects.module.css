@@ -69,7 +69,8 @@
     height: 45px; /* Consistent height */
     line-height: 30px; /* Vertical alignment */
     font-size: 1.2em; /* Font size */
-    margin-top: 6rem; /* Spacing above the button */
+    margin: 0 auto; /* Spacing above the button */
+    margin-top: 6rem;
 }
 
 @media screen and (min-width: 1400px) {

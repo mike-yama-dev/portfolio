@@ -27,6 +27,10 @@
     background-color: #9641ff;
 }
 
+.border {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
 
     .container {
@@ -48,4 +52,12 @@
         min-width: 10rem;
     }
     
+    .border {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #9641ff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
