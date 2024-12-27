@@ -2,7 +2,7 @@
 
 This is my solo hackathon! I'm taking this time to make a portfolio in as fast as possible in order to showcase working under pressure
 
-My hackathon date is December 26, 2024 started at 1:45PM. 
+# My hackathon date is December 26, 2024 started at 1:45PM. 
 
 Here are the steps I have done and will log them as I go along 
 
@@ -21,3 +21,5 @@ Here are the steps I have done and will log them as I go along
 - My partner is currently working on the image that I will use as a photo in the intro
 - Finished first draft of the projects
 - Gathered screen shots of projects to use
+
+# Current time: 4:09PM -- Break
