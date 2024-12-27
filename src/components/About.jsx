@@ -1,7 +1,11 @@
+import styles from './About.module.css';
+
 const AboutMe = () => {
     return (
-        <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
-            <h1>About Me</h1>
+        <div className={styles.container}>
+            <h1 className={styles.title}>About Me</h1>
+
+            <div className={styles.content}>
             <p>
                 {`Hi! my name is Mike Yamauchi, I'm an ambitious full-stack developer with a passion for creating impactful solutions, specializing in React Native and Expo. \nOutside of coding, I enjoy spending time with my partner, playing video games, and hanging out with my cat. `}
             </p>
@@ -13,6 +17,7 @@ const AboutMe = () => {
             <p>
                 Feel free to reach out to learn more!
             </p>
+            </div>
         </div>
     );
 };

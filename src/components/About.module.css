@@ -1,0 +1,15 @@
+.container{
+    padding: 20px;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+}
+
+.content{
+    font-size: 1.2em;
+    margin-left: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}

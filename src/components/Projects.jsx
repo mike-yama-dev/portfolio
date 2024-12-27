@@ -1,3 +1,5 @@
+import styles from './Projects.module.css';
+
 const Projects = () => {
     const projectData = [
         {
@@ -31,43 +33,26 @@ const Projects = () => {
     ];
 
     return (
-        <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+        <div className={styles.container}>
             <h1>My Projects</h1>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '20px' }}>
+            <div className={styles.projects}>
                 {projectData.map((project, index) => (
                     <div
                         key={index}
-                        style={{
-                            border: '1px solid #ddd',
-                            borderRadius: '10px',
-                            padding: '20px',
-                            textAlign: 'left',
-                            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                        }}
+                        className={styles.individualProject}
                     >   
                         {project.src && project.imgPrint == 'portrait' ? (
                             <img
                                 src={project.src}
                                 alt={project.name}
-                                style={{
-                                    width: '60%',
-                                    height: 'auto',
-                                    borderRadius: '10px',
-                                    display: 'block', // Ensures it's treated as a block-level element
-                                    margin: '0 auto', // Centers horizontally
-                                }}
+                                className={styles.portrait}
                                 />) : 
                         <img
                             src={project.src}
                             alt={project.name}
-                            style={{
-                                width: '100%',
-                                height: 'auto',
-                                borderRadius: '10px',
-                                margin: '0 auto',
-                            }}
+                            className={styles.landscape}
                         />}
-                        <h2 style={{ margin: '0 0 10px 0' }}>{project.name}</h2>
+                        <h2 style={{ margin: '30px 0 10px 0' }}>{project.name}</h2>
                         <p style={{ margin: '0 0 20px 0', lineHeight: '1.6' }}>{project.description}</p>
                         <div
                         style={{
@@ -118,13 +103,15 @@ const Projects = () => {
                             rel="noopener noreferrer"
                             style={{
                                 padding: '10px 15px',
-                                backgroundColor: '#4CAF50',
+                                backgroundColor: '#9641ff',
                                 color: 'white',
                                 textDecoration: 'none',
                                 borderRadius: '5px',
                                 display: 'inline-block',
+                                alignContent: 'center',
                                 height: '50px', // Ensure consistent height
                                 lineHeight: '30px', // Vertical alignment
+                                fontSize: '1.2em',
                             }}
                             >
                             Visit Project
