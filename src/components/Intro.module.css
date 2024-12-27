@@ -28,8 +28,14 @@
 }
 
 .border {
-    display: none;
-}
+    display: block; /* Makes the element block-level */
+    width: 4px; /* Narrow width to create a vertical line */
+    height: 10rem; /* Adjust height as needed */
+    border-left: 4px dotted #9641ff; /* Use border-left for a vertical dotted line */
+    margin: 0 auto; /* Centers the line horizontally */
+    margin-top: 4rem; /* Adds spacing at the top */
+    margin-bottom: -5rem;
+  }
 
 @media screen and (min-width: 768px) {
 

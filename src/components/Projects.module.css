@@ -70,10 +70,13 @@
     line-height: 30px; /* Vertical alignment */
     font-size: 1.2em; /* Font size */
     margin: 0 auto; /* Spacing above the button */
-    margin-top: 10rem;
+
 }
 
 @media screen and (min-width: 1400px) {
+    .buttonContainer{
+        margin-top: 10rem;
+    }
     .container {
         padding: 20px; 
         max-width: 1400px; 
