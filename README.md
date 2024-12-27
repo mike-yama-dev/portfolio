@@ -51,3 +51,4 @@ Here are the steps I have done and will log them as I go along
 
 # I'd like to add technology to the projects
 
+- Thank you for taking the time to read this, if you're here!
