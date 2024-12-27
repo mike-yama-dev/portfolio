@@ -70,7 +70,7 @@
     line-height: 30px; /* Vertical alignment */
     font-size: 1.2em; /* Font size */
     margin: 0 auto; /* Spacing above the button */
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 @media screen and (min-width: 1400px) {

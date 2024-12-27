@@ -54,6 +54,7 @@ const Projects = () => {
                         />}
                         <h2 style={{ margin: '30px 0 10px 0' }}>{project.name}</h2>
                         <p style={{ margin: '0 0 20px 0', lineHeight: '1.6' }}>{project.description}</p>
+                        <p style={{ margin: '0 0 20px 0', lineHeight: '1.6' }}><strong>Technology:</strong> {project.technology}</p>
                         <div
                         style={{
 

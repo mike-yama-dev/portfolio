@@ -48,3 +48,6 @@ Here are the steps I have done and will log them as I go along
 # HACKATHON FINISHED -- 7:18PM 
 
 - Total time: 4 hours and 43 minutes
+
+# I'd like to add technology to the projects
+
