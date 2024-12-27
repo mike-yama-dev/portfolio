@@ -5,21 +5,21 @@ const Intro = ({ aboutRef, projectsRef, contactRef }) => {
   const handleScrollToAbout = (e) => {
     e.preventDefault();
     if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to About section
+      aboutRef.current.scrollIntoView(); // Smooth scroll to About section
     }
   };
 
   const handleScrollToProjects = (e) => {    
     e.preventDefault();
     if (projectsRef.current) {
-        projectsRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to Projects section
+        projectsRef.current.scrollIntoView(); // Smooth scroll to Projects section
     }
   }
 
     const handleScrollToContact = (e) => {
         e.preventDefault();
         if (contactRef.current) {
-        contactRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to Contact section
+        contactRef.current.scrollIntoView(); // Smooth scroll to Contact section
         }
     }
 
