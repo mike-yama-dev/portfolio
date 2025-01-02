@@ -46,7 +46,7 @@ const Intro = ({ aboutRef, projectsRef, contactRef }) => {
         onClick={handleScrollToProjects} // Call the scroll handler
         className={styles.button}
         >
-        My Projects
+        Live Projects
         </a>
 
         <a
